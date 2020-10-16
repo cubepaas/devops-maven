@@ -28,7 +28,7 @@ spec:
         app: greenhouse
     spec:
       imagePullSecrets:
-      - name: devops-docker-registry
+      - name: local-registry
       containers:
       - name: maven
         image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
